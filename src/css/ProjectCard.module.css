@@ -1,0 +1,30 @@
+.visual {
+  height: 400px;
+  width: 500px;
+  background-color: rgb(37, 37, 37);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visual img {
+  height: 100%;
+  width: auto;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.card {
+  margin-top: 9.6rem;
+  display: flex;
+}
+
+.card:last-of-type {
+  margin-bottom: 9.6rem;
+}

@@ -1,0 +1,59 @@
+.CardHeader {
+  width: 100%;
+  background-color: #eae8fd;
+  height: 60vh;
+  border: 1px solid #7b61ff59;
+  margin-bottom: 9.6rem;
+  padding: 1.6rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+}
+
+.text {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #7b61ff;
+  padding-left: 2.4rem;
+}
+
+.text h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6.2rem;
+}
+
+.text p {
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-indent: 0;
+  color: #3e3a51;
+  max-width: 49rem;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  width: 100%;
+}
+
+.CardHeaderDark {
+  background-color: #1b1a2b;
+}
+
+.textDark {
+  background-color: #7b61ff;
+  color: #ffff;
+}
+
+.textDark p {
+  color: #ffff;
+}

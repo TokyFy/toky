@@ -1,0 +1,162 @@
+.HeaderOne {
+  font-family: DMsans;
+  font-style: normal;
+  font-weight: medium;
+  font-size: 60px;
+  color: #262626;
+}
+
+.Headertwo {
+  font-family: DMsans;
+  font-style: inherit;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 117%;
+
+  /* or 37px */
+  letter-spacing: -0.03em;
+
+  color: #262626;
+}
+
+.body {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
+  letter-spacing: -0.015em;
+  /* Light Theme/primary */
+  color: #262626;
+  padding: 0.8rem 0;
+}
+
+.HeaderThree {
+  font-weight: bold;
+  font-size: 3.6rem;
+  color: #131414;
+  width: max-content;
+  padding: 0.8rem 0;
+  padding-bottom: 1.6rem;
+  text-transform: uppercase;
+}
+
+.SubText {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #717272;
+  padding: 0.8rem 0;
+}
+
+.LinkText {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 121.5%;
+  position: relative;
+  width: max-content;
+  color: #262626;
+  padding: 0.8rem 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.LinkText span {
+  margin-right: 1.6rem;
+}
+
+.LinkText:hover {
+  animation: colorLink 1s both;
+}
+
+.LinkText:hover:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.2rem;
+  background-color: #7b61ff;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+  animation: underline 1s both;
+}
+
+.arrow {
+  aspect-ratio: 1;
+  width: 1.2rem;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.LinkText:hover .arrow {
+  animation: pushRigth 1s both;
+}
+
+.LinkText:hover .arrow::after,
+.LinkText:hover .arrow::before {
+  animation: backColorLink 1s both;
+}
+
+.arrow::before,
+.arrow::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #181717;
+  width: 100%;
+  height: 0.4rem;
+  border-radius: 4px;
+}
+
+.arrow::before {
+  transform: rotate(45deg) translate(-50%, 50%);
+}
+
+.arrow::after {
+  transform: rotate(-45deg) translate(-50%, -50%);
+}
+
+@keyframes underline {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes colorLink {
+  0% {
+    color: #181717;
+  }
+
+  100% {
+    color: #7b61ff;
+  }
+}
+
+@keyframes backColorLink {
+  0% {
+    background-color: #181717;
+  }
+
+  100% {
+    background-color: #7b61ff;
+  }
+}
+
+@keyframes pushRigth {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(1rem);
+  }
+}

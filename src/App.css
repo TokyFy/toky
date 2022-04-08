@@ -1,0 +1,30 @@
+.App {
+  width: 100vw;
+}
+
+.row {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.void {
+  height: 100vh;
+}
+
+.ProjectListIntro {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #3e3a51;
+  margin-bottom: 3.2rem;
+}
+
+.ProjectListIntroDark {
+  color: #cbc3f2;
+}

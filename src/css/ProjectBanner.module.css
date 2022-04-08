@@ -1,0 +1,116 @@
+.ProjectBanner {
+  width: 100%;
+  color: rgb(37, 37, 37);
+}
+
+.imageProject {
+  overflow: hidden;
+  width: 100%;
+}
+
+.imageProject img {
+  width: 100%;
+  height: auto;
+  transition: all 1s;
+  transform: scale(1.025);
+}
+
+.imageProject:hover img {
+  transform: scale(1.1);
+}
+
+.descriptionProject .title {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  color: #7b61ff;
+  font-size: 28px;
+  line-height: 37px;
+  letter-spacing: 0.2px;
+  font-weight: 900;
+  text-indent: 0;
+  align-self: baseline;
+}
+
+.descriptionProjectDark .title {
+  color: #fff;
+}
+
+.descriptionProject .text {
+  margin-bottom: 32px;
+  line-height: 29px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-indent: 0;
+  color: #3e3a51;
+}
+
+.descriptionProjectDark .text {
+  color: #cbc3f2;
+}
+
+.largeDescription {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 1fr 20%;
+}
+
+.largeDescription .title {
+  align-self: flex-end;
+  margin: 0;
+}
+
+.largeDescription .text {
+  margin-bottom: 0;
+}
+
+.largeDescription .link {
+  margin-top: 42px;
+}
+
+.link {
+  color: #3e3a51;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  width: max-content;
+  height: max-content;
+  padding: 16px 42px;
+  border: 3px solid #3e3a51;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.linkDark {
+  color: #cec6f5;
+  border-color: #cbc3f2;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #cec6f5;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateY(-100%);
+}
+
+.link:hover::after {
+  transform: translateY(0);
+  transition: all 0.25s ease-in-out;
+  transform: scale(2);
+}
+
+.link:hover {
+  border-color: #7b61ff;
+  transition: all 0.25s ease-in-out;
+  color: #7b61ff;
+}
