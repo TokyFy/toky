@@ -23,25 +23,27 @@ function ProjectList() {
         <ProjectBanner
           image={theme === "LIGTH" ? imageProject1 : imageProject1Dark}
           title="Chat app"
-          description="This is a chap app that doesn't require to sing in , anyone can join
-          and its realTime , build with html/css and the firebase API"
+          description="This is a chap app that does not require singing,
+          anyone can join and its real time, build with HTML/CSS and
+          the firebase API."
         ></ProjectBanner>
       </div>
       <div className={Style.project2}>
         <ProjectBanner
           image={theme === "LIGTH" ? imageProject2 : imageProject2Dark}
           title="Todo App"
-          description="A litle project from frontEndMentor.io , a created this simple todo app ,
-          buit with react and redux as state managment"
+          description="A little project from frontendmentor.io, I created
+          this simple to-do app, built with react and a redux as
+          state management"
         ></ProjectBanner>
       </div>
       <div className={Style.project3}>
         <ProjectBanner
           image={theme === "LIGTH" ? imageProject3 : imageProject3Dark}
           title="My Portofolio"
-          description="Still in Beta , it's my website portofolio , it will containg all the
-          details about all my project and will be used for my personal blog.
-          Buitl with react and scss"
+          description="Still in Beta, it's my website portfolio,
+          it will contain all the details about all my projects and will be used
+          for my personal blog. Built with React."
           large={isMobile ? false : true}
         ></ProjectBanner>
       </div>

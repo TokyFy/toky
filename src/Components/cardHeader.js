@@ -32,19 +32,3 @@ function CardHeader() {
 }
 
 export default CardHeader;
-
-// eslint-disable-next-line no-lone-blocks
-{
-  /* <div className={Style.CardHeader}>
-      <div className={Style.hero}>
-        <img src={heroImage} alt="Hero" />
-      </div>
-      <div className={Style.text}>
-        <h1 className={Style.headingOne}>
-          Hello , I'm Toky &mdash; A Junior-Computer science student who trying
-          to specialize in Web developpement & UI/UX. &mdash; <br /> I'm glad
-          that you take your time to check my portofolio.
-        </h1>
-      </div>
-    </div> */
-}

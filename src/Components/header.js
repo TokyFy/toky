@@ -10,8 +10,9 @@ function Header() {
       </HeaderOne>
       <div className={HeaderStyle.presentation}>
         <Headertwo>
-          A Junior-Computer science student who trying to specialize in WEB
-          developpement & UI/UX.
+          A Junior-Computer science student who trying to specialize in Web
+          developpement & UI/UX. I'm glad that you take your time to check my
+          portofolio.
         </Headertwo>
       </div>
     </div>
