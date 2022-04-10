@@ -1,7 +1,7 @@
 .CardHeader {
   width: 100%;
   background-color: #eae8fd;
-  height: 60vh;
+  height: 55vh;
   border: 1px solid #7b61ff59;
   margin-bottom: 9.6rem;
   padding: 1.6rem;
@@ -70,6 +70,10 @@
 }
 
 @media (max-width: 1055px) {
+  .CardHeader {
+    height: 45vh;
+  }
+
   .text h1 {
     font-size: 4.2rem;
   }
@@ -81,13 +85,17 @@
 }
 
 @media (max-width: 900px) {
+  .image img {
+    width: 80%;
+  }
+
   .text h1,
   .text p {
     text-align: center;
   }
 
   .text h1 {
-    font-size: 4.2rem;
+    font-size: 6.2rem;
     margin-bottom: 1rem;
   }
 
@@ -103,6 +111,12 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .text h1 {
+    font-size: 4.2rem;
   }
 }
 

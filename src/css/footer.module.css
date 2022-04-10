@@ -6,6 +6,10 @@
   display: flex;
 }
 
+.footerDark {
+  background-color: #1b1a2b;
+}
+
 .inner {
   display: grid;
   grid-template-rows: 10% 1fr 15%;
@@ -82,9 +86,13 @@
   margin: 5rem 0;
 }
 
-.text h3 {
+.thanks {
   font-size: 2.2rem;
   color: #3f3d56;
+}
+
+.thanksDark {
+  color: #cbc3f2;
 }
 
 .social {
@@ -113,4 +121,67 @@
   font-size: 16px;
   color: #6c63ff;
   margin-left: auto;
+}
+
+@media (max-width: 1305px) {
+  .text h2 {
+    font-size: 8.2rem;
+    margin: 3rem 0;
+  }
+}
+
+@media (max-width: 1150px) {
+  .text h2 {
+    font-size: 6.2rem;
+    margin: 2rem 0;
+    line-height: 6rem;
+  }
+}
+
+@media (max-width: 955px) {
+  .footer {
+    padding: 4.2rem 0;
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+  }
+
+  .navLink {
+    margin-right: 0;
+  }
+
+  .hero {
+    height: 30rem;
+    margin: 3rem 0;
+  }
+
+  .hero img {
+    width: auto;
+    height: 100%;
+  }
+
+  .social {
+    padding-top: 4.2rem;
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 565px) {
+  .text h3 {
+    font-size: 1.8rem;
+  }
+  .text h2 {
+    font-size: 4.2rem;
+    margin: 3rem 0;
+    line-height: 4rem;
+    margin-top: 1.5rem;
+  }
 }

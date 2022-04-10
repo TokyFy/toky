@@ -20,18 +20,17 @@ function App() {
       setTheme("DARK");
       document.body.style.backgroundColor = "#000";
     }
-    console.log(`The theme is ${theme}`);
   };
 
   return (
     <ThemeContext.Provider value={theme}>
       <div className="App">
-        <Noise/>
+        <Noise />
         <div className="sticky-">
-          <NavBar clickHander={switchTheme}/>
+          <NavBar clickHander={switchTheme} />
         </div>
         <div className="row">
-          <CardHeader/>
+          <CardHeader />
         </div>
         <div className="row">
           <h3
@@ -41,9 +40,9 @@ function App() {
           >
             There are some project I have made :
           </h3>
-          <ProjectList/>
+          <ProjectList />
         </div>
-        <Footer/>
+        <Footer clickHander={switchTheme} />
       </div>
     </ThemeContext.Provider>
   );

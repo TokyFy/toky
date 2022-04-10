@@ -1,16 +1,26 @@
 import { footerStyle as Style } from "../css";
 
+import { useContext } from "react";
+import { ThemeContext } from "../Context";
+
 import {
   logo,
   facebookIco,
   instagramIco,
   linkeding,
   footerHero,
+  footerHeroDark,
 } from "../image";
 
 function Footer() {
+  let theme = useContext(ThemeContext);
+
   return (
-    <div className={Style.footer}>
+    <div
+      className={`${Style.footer} ${
+        theme === "DARK" ? Style.footerDark : null
+      }`}
+    >
       <div className={`row ${Style.inner}`}>
         <div className={Style.navbar}>
           <div className={Style.logo}>
@@ -24,13 +34,20 @@ function Footer() {
         </div>
         <div className={Style.main}>
           <div className={Style.text}>
-            <h3 className={Style.thanks}>
+            <h3
+              className={`${Style.thanks} ${
+                theme === "DARK" ? Style.thanksDark : null
+              }`}
+            >
               Thanks for your visit. Have a Great Days !
             </h3>
             <h2>Let Do some cool stuff together.</h2>
           </div>
           <div className={Style.hero}>
-            <img src={footerHero} alt="balloon ilustration" />
+            <img
+              src={theme === "DARK" ? footerHeroDark : footerHero}
+              alt="balloon ilustration"
+            />
           </div>
         </div>
         <div className={Style.social}>
